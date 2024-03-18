@@ -5,10 +5,11 @@ import cors from 'cors';
 
 import './database/connection';
 
-import routers from './models/routes';
+import routers from './routes';
 import errorHandler from './errors/handler';
 
 const app = express();
+
 
 app.use(cors());
 app.use(express.json());
