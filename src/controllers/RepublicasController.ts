@@ -26,16 +26,6 @@ export default {
 
         return res.json(republicaView.render(republica));
     },
-    // async find(req: Request, res: Response) {
-    //     const { name } = req.body.name;
-    //     const republicasRepository = getRepository(Republica);
-
-    //     const republica = await republicasRepository.findOneOrFail(name, {
-    //         relations: ['name']
-    //     })
-
-    //     return res.json(republicaView.render(republica));
-    // },
     
     async create(req: Request, res: Response) {
         const {
